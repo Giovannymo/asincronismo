@@ -1,0 +1,9 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+.mb-n2 {
+    z-index: 1;
+    font-size: 4rem;
+    margin-bottom: -60px;
+}
