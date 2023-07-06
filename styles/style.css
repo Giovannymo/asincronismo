@@ -4,6 +4,14 @@
 
 .mb-n2 {
     z-index: 1;
-    font-size: 4rem;
-    margin-bottom: -60px;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+
+.upper-case{
+    text-transform: uppercase;
+}
+#img-weather{
+    width: 256px;
 }
