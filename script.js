@@ -6,7 +6,7 @@ const $btnSend = document.getElementById("btnSend")
 
 $btnSend.addEventListener("click", async (e)=>{
     const city = $txtCity.value;
-    const URL = `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&onecall?lang=sp&appid=`;
+    const URL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&onecall?lang=sp&appid=`;
     const API_KEY = "eef1bee8e136427c52e09919160c87de";
 
     const data = await getData(URL, API_KEY)
