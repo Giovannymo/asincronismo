@@ -5,7 +5,11 @@
 .mb-n2 {
     z-index: 1;
     font-size: 3rem;
+    margin-bottom: -40px;
     font-weight: bold;
+}
+.main{
+    font-size: 4rem !important;
 }
 
 
@@ -13,5 +17,6 @@
     text-transform: uppercase;
 }
 #img-weather{
-    width: 256px;
+    width: 40%;
+    z-index: 0;
 }

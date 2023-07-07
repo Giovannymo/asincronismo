@@ -4,17 +4,15 @@ const $txtCity = document.getElementById("txtCity")
 const $btnSend = document.getElementById("btnSend")
 
 
-$btnSend.addEventListener("click", async (e)=>{
+$btnSend.addEventListener("click", async ()=>{
     const city = $txtCity.value;
     const URL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&onecall?lang=sp&appid=`;
     const API_KEY = "eef1bee8e136427c52e09919160c87de";
 
     const data = await getData(URL, API_KEY)
     $txtCity.value = ""
-    console.log(data)
-    /* Show data in Document */
-    
 
+    /* Show data in Document */
     show(data)
 })
 
@@ -31,7 +29,7 @@ function show(city){
     const $humidity = document.querySelector(".humidity")
     const $imgMain = document.getElementById("img-weather")
 
-    if(city.main.humidity > 60){
+    if(city.main.humidity > 90){
         $imgMain.src = "./img/rain.png"
     }else{
         $imgMain.src = "./img/sun.png"
