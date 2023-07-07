@@ -31,7 +31,7 @@ function show(city){
     const $humidity = document.querySelector(".humidity")
     const $imgMain = document.getElementById("img-weather")
 
-    if(city.main.humidity < 30){
+    if(city.main.humidity > 60{
         $imgMain.src = "./img/rain.png"
     }else{
         $imgMain.src = "./img/sun.png"
